@@ -1,0 +1,25 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered table-stripped">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Bank Account</th>
+                        <th>History</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of user">
+                        <td> {{user.username}} </td>
+                        <td> {{user.bank_account}}</td>
+                        <td> {{user.history}} </td>
+                        <td> {{user.date}} </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <button class="btn btn-warning" [routerLink]="['/']" >back to welcome page</button>
+</div>
